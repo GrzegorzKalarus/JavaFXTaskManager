@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #FFEEDD;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterScreenController">
+    <children>
+      <JFXTextField fx:id="username" focusColor="#9381ff" labelFloat="true" layoutX="23.0" layoutY="289.0" prefHeight="42.0" prefWidth="330.0" promptText=" Enter Your Username" style="-fx-text-fill: #9381FF;" unFocusColor="#ffd8be">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="password" focusColor="#9381ff" labelFloat="true" layoutX="23.0" layoutY="366.0" prefHeight="42.0" prefWidth="330.0" promptText="Enter Your Password" style="-fx-text-fill: #9381FF;" unFocusColor="#ffd8be">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+        <JFXTextField fx:id="name" focusColor="#9381ff" labelFloat="true" layoutX="400.0" layoutY="289.0" prefHeight="42.0" prefWidth="330.0" promptText=" Enter Your Name" style="-fx-text-fill: #9381FF;" unFocusColor="#ffd8be">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </JFXTextField>
+      <JFXTextField fx:id="surname" focusColor="#9381ff" labelFloat="true" layoutX="399.0" layoutY="366.0" prefHeight="42.0" prefWidth="330.0" promptText=" Enter Your Surname" style="-fx-text-fill: #9381FF;" unFocusColor="#ffd8be">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="age" focusColor="#9381ff" labelFloat="true" layoutX="400.0" layoutY="442.0" prefHeight="42.0" prefWidth="330.0" promptText=" Enter Your Age" style="-fx-text-fill: #9381FF;" unFocusColor="#ffd8be">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="numberOfInstallments" focusColor="#a0d2db" labelFloat="true" layoutX="399.0" layoutY="600.0" prefHeight="42.0" prefWidth="330.0" promptText="Enter Number Of Installments" style="-fx-text-fill: #A0D2DB;" unFocusColor="#251351" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+        <JFXButton fx:id="registerButton" layoutX="236.0" layoutY="701.0" mnemonicParsing="false" onAction="#register" prefHeight="49.0" prefWidth="138.0" style="-fx-background-color: #9381FF;" text="Register" textFill="#ffd8be" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <ImageView fitHeight="197.0" fitWidth="330.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="cancelButton" layoutX="426.0" layoutY="701.0" mnemonicParsing="false" onAction="#goBack" prefHeight="49.0" prefWidth="138.0" style="-fx-background-color: #9381FF;" text="Cancel" textFill="#ffd8be" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+      <Label fx:id="registerStatus" layoutX="169.0" layoutY="674.0" textFill="#9381ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="197.0" fitWidth="330.0" layoutX="23.0" layoutY="140.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/registration.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
