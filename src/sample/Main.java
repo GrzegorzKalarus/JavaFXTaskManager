@@ -17,9 +17,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         stg=primaryStage;
-        primaryStage.setResizable(false);
+        primaryStage.setResizable(true);
         Parent root = FXMLLoader.load(getClass().getResource("loginScreen.fxml"));
-        primaryStage.setTitle("|| Official Grzegorz Kalarus Task Manager App ||");
+        primaryStage.setTitle("|| Bollywood Cinema Employee Helper ||");
+        primaryStage.setFullScreen(true);
         primaryStage.setScene(new Scene(root, 800, 800));
         primaryStage.show();
     }
